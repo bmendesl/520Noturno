@@ -21,5 +21,5 @@ except FileExistsError:
     else:
         with open(nome, 'a') as arq:
             arq.write(shebang)
-
-os.chmod(nome, 0o755)
+finally:
+    os.chmod(nome, 0o755)
