@@ -1,1 +1,42 @@
 Aula pratica na 4linux de fundamentos de python
+
+
+----------------------------------------
+
+Aula 7 - banco de dados
+
+MONGO
+
+https://university.mongodb.com/
+
+#command para listar os bancos
+> show dbs
+4803    0.000GB
+client  0.000GB
+devops  0.000GB
+local   0.000GB
+
+#criar  banco
+> use aulamongo
+switched to db aulamongo
+
+#inserindo dado em uma tabela e criando a tabela
+> db.usuarios.insert({_id:1, nome:'bruno', sobrenome:'lima'})
+WriteResult({ "nInserted" : 1 })
+> show tables
+usuarios
+
+> db.usuarios.find()
+{ "_id" : 1, "nome" : "bruno", "sobrenome" : "lima" }
+
+> db.usuarios.find().pretty()
+{ "_id" : 1, "nome" : "bruno", "sobrenome" : "lima" }
+
+#troca somente o que e necessario
+> db.usuarios.update({_id:1},{$set:{sobrenome:'pedro'}})
+
+db.usuarios.remove({_id:4})
+
+
+#Para coneexcao com o mongodb com python
+pip3 install pymongo
