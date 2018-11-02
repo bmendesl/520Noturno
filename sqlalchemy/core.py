@@ -13,7 +13,7 @@ user_table = Table('usuarios',
                    Column('idade', Integer, nullable=False),
                    Column('senha', String),
                    Column('criado_em', DateTime,
-                          default=datetime.now,
+                          default=datetime.now),
                    Column('atualizado_em', DateTime,
                           default=datetime.now,
                           onupdate=datetime.now)

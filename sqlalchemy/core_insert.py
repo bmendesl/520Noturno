@@ -8,9 +8,9 @@ ins = user_table.insert()
 
 
 con.execute(ins, [
-    {'nome': 'marcio', 'idade': 21, 'senha': 'semsenha'},
-    {'nome': 'gustavo', 'idade': 18, 'senha': 'abacaxi123'},
-    {'nome': 'guilherme', 'idade': 22, 'senha': 'goiaba123'}
-
+    # {'nome': 'marcio', 'idade': 21, 'senha': 'semsenha'},
+    # {'nome': 'gustavo', 'idade': 18, 'senha': 'abacaxi123'},
+    # {'nome': 'guilherme', 'idade': 22, 'senha': 'goiaba123'}
+    {'nome': 'daniel', 'idade': 24, 'senha': 'comsenha'}
 
 ])
