@@ -7,3 +7,12 @@ pkg-resources==0.0.0
 Werkzeug==0.14.1
 
 https://app.vagrantup.com/boxes/search
+
+
+https://get.docker.com/
+
+curl https://get.docker.com/ | bash
+
+docker ps
+docker pull jupyter/datascience-notebook
+docker run -dti ubuntu bash
